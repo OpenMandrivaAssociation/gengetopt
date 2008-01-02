@@ -10,6 +10,7 @@ Source0: ftp://ftp.gnu.org/gnu/gengetopt/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Development/C
 URL: http://www.gnu.org/software/gengetopt/gengetopt.html
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: flex
 
 %description
