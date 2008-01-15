@@ -1,12 +1,12 @@
 %define name gengetopt
-%define version 2.21
+%define version 2.22
 %define release %mkrel 1
 
 Summary: GNU gengetopt generates command line parsers
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: ftp://ftp.gnu.org/gnu/gengetopt/%{name}-%{version}.tar.bz2
+Source0: ftp://ftp.gnu.org/gnu/gengetopt/%{name}-%{version}.tar.gz
 License: GPL
 Group: Development/C
 URL: http://www.gnu.org/software/gengetopt/gengetopt.html
