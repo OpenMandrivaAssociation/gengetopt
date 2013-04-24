@@ -45,8 +45,6 @@ mv %buildroot/%_datadir/doc/gengetopt installed-docs
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-%_install_info %name.info
 
 %postun
 %_remove_install_info %name.info
