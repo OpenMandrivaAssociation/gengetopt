@@ -1,6 +1,6 @@
 %define name gengetopt
 %define version 2.22.5
-%define release %mkrel 1
+%define release  2
 
 Summary: GNU gengetopt generates command line parsers
 Name: %{name}
