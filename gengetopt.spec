@@ -1,7 +1,7 @@
 Summary:	GNU gengetopt generates command line parsers
 Name:		gengetopt
 Version:	2.22.6
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Development/C
 Url:		http://www.gnu.org/software/gengetopt/gengetopt.html
