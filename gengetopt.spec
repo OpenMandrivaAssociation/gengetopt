@@ -1,14 +1,13 @@
-Summary:	GNU gengetopt generates command line parsers
+Summary:	Tool to write command line option parsing code for C/C++ programs
 Name:		gengetopt
-Version:	2.22.6
-Release:	2
-License:	GPLv3+
-Group:		Development/C
-Url:		http://www.gnu.org/software/gengetopt/gengetopt.html
-Source0:	ftp://ftp.gnu.org/gnu/gengetopt/%{name}-%{version}.tar.gz
-Source10:	%{name}.rpmlintrc
-BuildRequires:	bison
-BuildRequires:	flex
+Version:	2.23
+Release:	1
+License:	GPLv2+
+Group:		Development/Tools
+URL:		https://www.gnu.org/software/gengetopt/gengetopt.html
+Source0:	https://ftp.gnu.org/gnu/gengetopt/gengetopt-%{version}.tar.xz
+BuildRequires:	gettext
+BuildRequires:	bison flex
 
 %description
 This program generates a C function that uses getopt_long function to parse
@@ -23,25 +22,20 @@ with - and consist of only one character) can be handled. For standards
 about short and long options you may want to take a look at the GNU Coding
 Standards.
 
-%files
-%doc %{_docdir}/%{name}/*
-%{_bindir}/gengetopt
-%{_datadir}/gengetopt/
-%{_mandir}/man1/gengetopt.1*
-%{_infodir}/gengetopt.info*
-
-#----------------------------------------------------------------------------
-
 %prep
-%setup -q
+%autosetup -p1
+%configure
 
 %build
-%configure2_5x
-make
-
-%check
-%make check
+%make_build
 
 %install
-%makeinstall_std
+%make_install
+rm -rf %{buildroot}%{_infodir}/index.*
 
+%files
+%doc %{_docdir}/gengetopt
+%{_bindir}/*
+%{_mandir}/*/*
+%{_datadir}/gengetopt
+%{_infodir}/*.info*
