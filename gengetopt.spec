@@ -8,6 +8,7 @@ URL:		https://www.gnu.org/software/gengetopt/gengetopt.html
 Source0:	https://ftp.gnu.org/gnu/gengetopt/gengetopt-%{version}.tar.xz
 BuildRequires:	gettext
 BuildRequires:	bison flex
+BuildRequires:	texinfo
 
 %description
 This program generates a C function that uses getopt_long function to parse
