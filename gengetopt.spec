@@ -1,7 +1,7 @@
 Summary:	Tool to write command line option parsing code for C/C++ programs
 Name:		gengetopt
 Version:	2.23
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Development/Tools
 URL:		https://www.gnu.org/software/gengetopt/gengetopt.html
