@@ -6,6 +6,11 @@ License:	GPLv2+
 Group:		Development/Tools
 URL:		https://www.gnu.org/software/gengetopt/gengetopt.html
 Source0:	https://ftp.gnu.org/gnu/gengetopt/gengetopt-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gettext
 BuildRequires:	bison flex
 BuildRequires:	texinfo
